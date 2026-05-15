@@ -20,8 +20,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+position: relative;
 }
-
+nav::after {
+  content: "";
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  bottom: 0;
+  height: 1.5px;
+  background-color: #aaa9a9;
+}
 nav img {
   height: 100px;
   width: 20%;
@@ -96,6 +105,11 @@ nav img {
   font-weight: 900;
   margin-bottom: 35px;
 }
+.hero h1:hover{
+    color: rgb(211, 17, 17);
+    transition: all 0.5s ease-in;
+
+}
 
 .layout {
   height: 650px;
@@ -123,6 +137,7 @@ nav img {
   font-size: 24px;
   line-height: 1.35;
 }
+
 
 .pic {
   width: 100%;
